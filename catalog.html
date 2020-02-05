@@ -8,7 +8,11 @@
     <header>
         <a href="index.html"><img src="img/logo-device.svg" width="163" height="35"></a>
         <div>
-            <!-- Форма поиска  по сайту-->
+            <form action="http://echo.htmlacademy.ru" method="get">
+            <label for="search-form" class="visually-hidden">Поле поиска</label>
+            <input type="text" name="search" id="search-form" placeholder="Поиск по сайту">
+            <button type="submit">Найти</button>
+            </form>
             <ul>
                 <li><a href="#"><img src="img/user.svg" width="13" height="12">Валентин Петухов</li>
                 <li><a href="#">Выйти</a></li>
@@ -47,9 +51,8 @@
             <li><a href="#">Моноподы для селфи</a></li>
         </ul>
         <section>
-            <h2>Фильтр товаров</h2>
-            <!-- тут будет форма -->
-            <button type="submit">Показать</button>
+            <h2>Фильтр</h2>
+            <!-- Форма --> 
         </section>
         <section>
             <h2>Сортировка</h2>
@@ -59,12 +62,12 @@
                 <li><a href="#">По популярности</a></li>
             </ul>
             <ul>
-                <li><a href="#">по возрастанию</a></li>
-                <li><a href="#">по убыванию</a></li>
+              <li><a href="#"><span class="visually-hidden">по возрастанию</span></a></li>
+              <li><a href="#"><span class="visually-hidden">по убыванию</span></a></li>
             </ul>
         </section>
         <section>
-            <h2>Товары</h2>
+            <h2 class="visually-hidden">Товары</h2>
             <ul>
                 <li>
                     <div>
@@ -128,11 +131,11 @@
         </ul>
         <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         <ul>
-            li><a href="#"><img src="img/fb.svg" width="32" height="32">Facebook</a></li>
-            <li><a href="#"><img src="img/instagram.svg" width="32" height="32">Instagram</a></li>
-            <li><a href="#"><img src="img/twitter.svg" width="32" height="32">Twitter</a></li>
+            li><a href="#"><img src="img/fb.svg" width="32" height="32"><span class="visually-hidden">Facebook</span></a></li>
+            <li><a href="#"><img src="img/instagram.svg" width="32" height="32"><span class="visually-hidden">Instagram</span></a></li>
+            <li><a href="#"><img src="img/twitter.svg" width="32" height="32"><span class="visually-hidden">Twitter</span></a></li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="36">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="36"><span class="visually-hidden">HTML Academy</span></a>
     </footer>
 </body>
 </html>
