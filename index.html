@@ -8,7 +8,11 @@
     <header>
         <a href="#"><img src="img/logo-device.svg" width="163" height="35"></a>
         <div>
-            <!-- Форма поиска  по сайту-->
+          <form action="http://echo.htmlacademy.ru" method="get">
+            <label for="search-form" class="visually-hidden">Поле поиска</label>
+            <input type="text" name="search" id="search-form" placeholder="Поиск по сайту">
+            <button type="submit">Найти</button>
+          </form>
             <ul>
                 <li><a href="#"><img src="img/user.svg" width="13" height="12">Войти</a></li>
                 <li><a href="#"><img src="img/compare.svg" width="10" height="10">Сравнить</a></li>
@@ -39,9 +43,9 @@
             </nav>
         </header>
         <main>
-            <h1>Главная Device</h1>
+            <h1 class="visually-hidden">Главная Device</h1>
             <section>
-                <h2>Слайдер товаров</h2>
+                <h2 class="visually-hidden">Слайдер товаров</h2>
                 <ul>
                     <li>
                         <img src="img/slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486">
@@ -97,7 +101,7 @@
                 </ul>
             </section>
             <section>
-                <h2>Категории</h2>
+                <h2 class="visually-hidden">Категории</h2>
                 <ul>
                     <li>
                         <a href="#">
@@ -138,7 +142,7 @@
                 </ul>
             </section>
             <section>
-                <h2>Услуги</h2>
+                <h2 class="visually-hidden">Услуги</h2>
                 <ul>
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Гарантия</a></li>
@@ -164,7 +168,7 @@
                 </ul>
             </section>
             <section>
-                <h2>Бренды</h2>
+                <h2 class="visually-hidden">Бренды</h2>
                 <ul>
                     <li>
                         <a href="#"><img src="img/logo-1-grey.png" alt="dji" width="260" height="100"></a>
@@ -214,11 +218,39 @@
             </ul>
             <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
             <ul>
-                <li><a href="#"><img src="img/fb.svg" width="32" height="32">Facebook</a></li>
-                <li><a href="#"><img src="img/instagram.svg" width="32" height="32">Instagram</a></li>
-                <li><a href="#"><img src="img/twitter.svg" width="32" height="32">Twitter</a></li>
+              <li><a href="#"><img src="img/fb.svg" width="32" height="32"><span class="visually-hidden">Facebook</span></a></li>
+                <li><a href="#"><img src="img/instagram.svg" width="32" height="32"><span class="visually-hidden">Instagram</span></a></li>
+                <li><a href="#"><img src="img/twitter.svg" width="32" height="32"><span class="visually-hidden">Twitter</span></a></li>
             </ul>
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="36">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="36"><span class="visually-hidden">HTML Academy</span></a>
         </footer>
+        <section>
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <form action="http://echo.htmlacademy.ru" method="post">
+            <label for="write-us-name">Ваше имя:</label>
+            <input type="text" name="name" id="write-us-name" placrholder="Имя Фамилия">
+            
+            <label for="write-us-email">Ваш e-mail:</label>
+            <input type="email" name="email" id="write-us-email" placeholder="email@example">
+            
+            <label for="write-us-text">Текст письма:</label>
+            <textarea name="text" id="write-us-text" placeholder="В свободное время"></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+          <button type="button">Закрыть</button>
+        </section>
+        <section>
+          <h2 class="visually-hidden">Карта</h2>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="960" height="559" id="gmap_canvas" src="https://maps.google.com/maps?q=%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2015&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+               </iframe>
+            </div>
+            <style>.mapouter{position:relative;text-align:right;height:559px;width:960px;}.gmap_canvas {overflow:hidden;background:none!important;height:559px;width:960px;}
+            </style>
+          </div>
+          <img src="img/map-big.jpg" alt="Офис компании по адресу улица Строителей, 15, Москва" width="960" height="559">
+          <button type="button">Закрыть</button>
+        </section>
     </body>
     </html>
