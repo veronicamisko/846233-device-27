@@ -1,3 +1,37 @@
+@font-face {
+    font-family: "Gilroy ExtraBold"
+    src: url("gilroyextrabold.woff2") format("woff2"),
+    url("gilroyextrabold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy Light"
+    src: url("gilroylight.woff2") format("woff2"),
+    url("gilroylight.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 2.4;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+
+
+
+
 .mapouter{
     position:relative;
     text-align:right;
