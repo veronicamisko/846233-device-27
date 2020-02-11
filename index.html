@@ -9,34 +9,34 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <a href="#"><img src="img/logo-device.svg" width="163" height="35"></a>
         <div>
           <form action="http://echo.htmlacademy.ru" method="get">
             <label for="search-form" class="visually-hidden">Поле поиска</label>
             <input type="text" name="search" id="search-form" placeholder="Поиск по сайту">
-            <button type="submit">Найти</button>
+            <button type="submit" class="btn">Найти</button>
           </form>
-            <ul>
+            <ul  class="user-navigation">
                 <li><a href="#"><img src="img/user.svg" width="13" height="12">Войти</a></li>
                 <li><a href="#"><img src="img/compare.svg" width="10" height="10">Сравнить</a></li>
                 <li><a href="#"><img src="img/cart.svg" width="12" height="12">Корзина</a></li>
                 </ul>
             </div>
             <nav>
-                <ul>
+                <ul  class="main-navigation">
                     <li>
                         <a href="#">Каталог товаров<img src="img/plus.svg" width="16" height="16"></a>
-                        <ul>
+                        <ul class="catalog-navigation">
                             <li><a href="#">Виртуальная реальность</a></li>
                             <li><a href="#">Моноподы для селфи</a></li>
                             <li><a href="#">Экшн-камеры</a></li>
                         </ul>
-                        <ul>
+                        <ul class="catalog-navigation">
                             <li><a href="#">Фитнес-браслеты</a></li>
                             <li><a href="#">Моноподы для селфи</a></li>
                         </ul>
-                        <ul>
+                        <ul class="catalog-navigation">
                             <li><a href="#">Квадрокоптеры</a></li>
                         </ul>
                     </li>
@@ -228,7 +228,7 @@
             </ul>
             <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="36"><span class="visually-hidden">HTML Academy</span></a>
         </footer>
-        <section>
+        <section class="write-us">
           <h2 class="visually-hidden">Форма обратной связи</h2>
           <form action="http://echo.htmlacademy.ru" method="post">
             <label for="write-us-name">Ваше имя:</label>
@@ -243,7 +243,7 @@
           </form>
           <button type="button">Закрыть</button>
         </section>
-        <section>
+        <section class="map">
           <h2 class="visually-hidden">Карта</h2>
           <div class="mapouter">
             <div class="gmap_canvas">
