@@ -1,19 +1,12 @@
 @font-face {
-    font-family: "Gilroy ExtraBold"
+    font-family: "Gilroy"
     src: url("gilroyextrabold.woff2") format("woff2"),
-    url("gilroyextrabold.woff") format("woff");
+         url("gilroyextrabold.woff") format("woff"),
+         url("gilroylight.woff2") format("woff2"),
+         url("gilroylight.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
-
-@font-face {
-    font-family: "Gilroy Light"
-    src: url("gilroylight.woff2") format("woff2"),
-    url("gilroylight.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 body {
     margin: 0;
@@ -28,10 +21,84 @@ body {
     background-color: #ffffff;
 }
 
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+.main-header {
+  background-color: #f7e296;
+}
+.main-navigation {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.user-navigation {
+  font-family: OpenSans;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.4;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #000000;
+}
+
+.catalog-navigation {
+  font-family: OpenSans;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.4;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
+}
 
 
 
+.main-navigation,
+.catalog-navigation,
+.user-navigation {
+  list-style: none;
+}
 
+.main-navigation a,
+.catalog-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.main-header a:hover,
+.main-navigation a:hover,
+.catalog-navigation a:hover,
+.user-navigation a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header a:active,
+.main-navigation a:active,
+.catalog-navigation a:active,
+.user-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.map,
+.write-us {
+  display: none;
+}
 .mapouter{
     position:relative;
     text-align:right;
