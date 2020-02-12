@@ -216,6 +216,11 @@ a {
   background-color: #464646;
 }
 
+.footer-logo,
+.footer-icon {
+  color: #ffc600;
+}
+
 .main-footer a:hover,
 .main-footer a:focus {
   opacity: 0.6;
