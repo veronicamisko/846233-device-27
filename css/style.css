@@ -2,23 +2,28 @@
     font-family: "Gilroy"
     src: url("gilroyextrabold.woff2") format("woff2"),
          url("gilroyextrabold.woff") format("woff"),
-         url("gilroylight.woff2") format("woff2"),
-         url("gilroylight.woff") format("woff");
-    font-weight: normal;
+    font-weight: 800;
     font-style: normal;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-
-    font-family: "Open Sans", Arial, sans-serif;
-    font-size: 15px;
+@font-face {
+    font-family: "Gilroy"
+    src: url("gilroylight.woff2") format("woff2"),
+         url("gilroylight.woff") format("woff");
     font-weight: 300;
-    line-height: 2.4;
-    color: #000000;
+    font-style: normal;
+}
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
 
-    background-color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
 a {
@@ -27,78 +32,260 @@ a {
 
 .visually-hidden {
   position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
   clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
 .main-header {
+  margin-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
   background-color: #f7e296;
-}
-.main-navigation {
-  font-family: Gilroy, Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 1.33;
-  letter-spacing: 3.6px;
-  color: black;
-  text-transform: uppercase;
+  height: 299px;
 }
 
-.user-navigation {
-  font-family: OpenSans;
-  font-size: 15px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.4;
-  letter-spacing: 0.15px;
-  text-align: left;
-  color: #000000;
-}
-
-.catalog-navigation {
-  font-family: OpenSans;
-  font-size: 15px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.4;
-  letter-spacing: 0.15px;
-  text-align: left;
-  color: #000000;
-  text-transform: none;
-}
-
-
-
-.main-navigation,
-.catalog-navigation,
-.user-navigation {
-  list-style: none;
-}
-
-.main-navigation a,
-.catalog-navigation a,
-.user-navigation a {
-  color: #000000;
+.header-logo {
+  width: 163px;
+  height: 35px;
 }
 
 .main-header a:hover,
-.main-navigation a:hover,
-.catalog-navigation a:hover,
-.user-navigation a:hover {
+.main-header a:focus {
+  opacity: 0.6;
+}
+
+.main-header a:active {
+  opacity: 0.3;
+}
+
+.search-navigation input {
+  height: 49px;
+  width: 356px;
+  margin: 0;
+  padding-top: 2px;
+  padding-left: 39px;
+  padding-bottom: 11px;
+  border: 0;
+
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+  opacity: 0.3;
+  border-bottom: 2px solid transparent;
+  background-color: transparent;
+}
+
+.search-navigation input:hover {
+  opacity: 0.6;
+  border-bottom: 2px solid transparent;
+}
+
+.search-navigation input:focus,
+.search-navigation input:active {
+  opacity: 1;
+  border-bottom: 2px solid #000000;
+  outline: none;
+}
+
+.navigation button {
+  height: 49px;
+  width: 85px;
+  padding: 0;
+  margin: 0;
+  border: 2px solid #000000;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.navigation button:hover,
+.navigation button:focus {
+  color: #ffffff;
+  background-color: #000000;
+  outline: none;
+}
+
+.navigation button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
+  outline: none;
+}
+
+.user-navigation {
+  width:  500px;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.compare-link:hover,
+.cart-link:hover,
+.login-link:hover,
+.profile-link:hover,
+.compare-link:focus,
+.cart-link:focus,
+.login-link:focus,
+.profile-link:focus {
+  opacity: 0.6;
+}
+
+.compare-link:active,
+.cart-link:active,
+.login-link:active,
+.profile-link:active {
+  opacity: 0.3;
+}
+
+.main-navigation {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.site-navigation .drop-menu {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+.drop-menu a {
+  text-transform: none;
+}
+
+.search-navigation,
+.site-navigation,
+.user-navigation,
+.drop.menu {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a,
+.drop.menu a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.search-navigation a:hover,
+.user-navigation a:focus,
+.site-navigation a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.main-header a:active,
-.main-navigation a:active,
-.catalog-navigation a:active,
-.user-navigation a:active {
+.site-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.map,
-.write-us {
-  display: none;
+.search-navigation a:focus {
+  color: rgba(0, 0, 0, 1);
 }
+
+.main-footer {
+  color: #ffffff;
+  background-color: #464646;
+}
+
+.main-footer a:hover,
+.main-footer a:focus {
+  opacity: 0.6;
+}
+
+.main-footer a:active {
+  opacity: 0.3;
+}
+
+.footer-user-navigation,
+.footer-site-navigation {
+  list-style: none;
+}
+
+.footer-user-navigation {
+  font-size: 15px;
+  line-height: 36px;
+}
+
+.footer-user-navigation a {
+  color: rgba(255, 255, 255, 0.7)
+}
+
+.compare-link-footer:hover,
+.cart-link-footer:hover,
+.login-link-footer:hover,
+.compare-link-footer:focus,
+.cart-link-footer:focus,
+.login-link-footer:focus {
+  opacity: 0.6;
+}
+
+.compare-link-footer:active,
+.cart-link-footer:active,
+.login-link-footer:active {
+  opacity: 0.3;
+}
+
+.footer-site-navigation {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.footer-site-navigation a {
+  color: #ffffff;
+}
+
+.footer-site-navigation a:hover,
+.footer-site-navigation a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-site-navigation a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-social {
+  list-style: none;
+  opacity: 0.3;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  opacity: 0.6;
+}
+
+.footer-social a:active {
+  opacity: 0.1;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.html-academy:hover,
+.html-academy:focus {
+  opacity: 0.6;
+}
+
+.html-academy:active {
+  opacity: 0.3;
+}
+
 .mapouter{
     position:relative;
     text-align:right;
