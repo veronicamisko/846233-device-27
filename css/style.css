@@ -162,6 +162,50 @@ a {
 .search-navigation a:focus {
   color: rgba(0, 0, 0, 1);
 }
+.slider-title {
+  font-family: Gilroy,Arial,sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: 800;
+  color: #000000;
+}
+.slider-text{
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #000000;
+}
+.slide a {
+  font-family: Gilroy,Arial,sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+}
+.parameters tr:first-child {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+}
+.parameters tr:last-child {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+}
+.categories-link {
+  font-family: "Gilroy", Arial ,sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+}
+.categories img {
+  background-color: rgba(240,197,46,.5);
+}
+.categories img:hover {
+  background-color: #f0c52e;
+}
 .main-footer {
   color: #ffffff;
   background-color: #464646;
