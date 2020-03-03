@@ -5,7 +5,7 @@
 	<title>HTML Academy: Девайс. Каталог</title>
 	<!-- Подключение шрифтов -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap&subset=cyrillic" rel="stylesheet">
-	<link href="fonts/gilroy.css" rel="stylesheet">
+	<link href="fonts/gilroy/gilroy.css" rel="stylesheet">
 	<!-- Подключение Normalize.css -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<!-- Подключение собственных стилей -->
@@ -21,7 +21,7 @@
 			<nav class="main-navigation">
 				<div class="main-navigation-wrapper">
 					<form action="">
-						<input type="search" placeholder="Поиск">
+						<input type="search" placeholder="Поиск по сайту">
 						<input type="submit" value="Найти">
 					</form>
 					<div class="navigation">
@@ -34,7 +34,7 @@
 				</div>
 				<div class="main-navigation-wrapper">
 					<ul class="site-navigation-list">
-						<li class="site-navigation-item"><a class="navigation-catalog" href="catalog.html">Каталог товаров</a>
+						<li class="site-navigation-item"><a class="navigation-list" href="catalog.html">Каталог товаров</a>
 							<ul class="site-navigation-inner-list">
 								<li>
 									<ul class="site-navigation-section">
@@ -126,7 +126,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<button class="button" type="submit">Показать</button>
+					<button class="filter-button button" type="submit">Показать</button>
 				</form>
 			</section>
 			<div class="catalog-wrapper">
@@ -138,8 +138,8 @@
 						<li><a class="sort-list-item" href="#">По популярности</a></li>
 					</ul>
 					<!-- Это стрелочки -->
-					<p>
-						<a class="sort-list-up"href="#" aria-label="Выше"></a>
+					<p class="sort-list-updown">
+						<a class="sort-list-up" href="#" aria-label="Выше"></a>
 						<a class="sort-list-down" href="#" aria-label="Ниже"></a>
 					</p>
 				</div>
@@ -147,8 +147,8 @@
 					<h2 class="visually-hidden">Моноподы для селфи</h2>
 					<div class="catalog-item">
 						<div class="curtain">
-							<button type="button">В корзину</button>
-							<button type="button">Добавить к сравнению</button>
+							<a class="catalog-button button" href="#">В корзину</a>
+							<a class="catalog-compare-button button" href="#">Добавить к сравнению</a>
 						</div>
 						<div class="img-wrapper">
 							<img src="img/product/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
@@ -160,8 +160,8 @@
 					</div>
 					<div class="catalog-item">
 						<div class="curtain">
-							<button type="button">В корзину</button>
-							<button type="button">Добавить к сравнению</button>
+							<a class="catalog-button button" href="#">В корзину</a>
+							<a class="catalog-compare-button button" href="#">Добавить к сравнению</a>
 						</div>
 						<div class="img-wrapper">
 							<img src="img/product/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
@@ -173,8 +173,8 @@
 					</div>
 					<div class="catalog-item">
 						<div class="curtain">
-							<button type="btn">В корзину</button>
-							<button type="button">Добавить к сравнению</button>
+							<a class="catalog-button button" href="#">В корзину</a>
+							<a class="catalog-compare-button button" href="#">Добавить к сравнению</a>
 						</div>
 						<div class="img-wrapper">
 							<img src="img/product/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
@@ -184,13 +184,13 @@
 							<span class="catalog-item-price">2500 руб.</span>
 						</p>
 					</div>
-					<div class="catalog-item">
+					<div class="catalog-item catalog-item-new">
 						<div class="curtain">
-							<button type="button">В корзину</button>
-							<button type="button">Добавить к сравнению</button>
+							<a class="catalog-button button" href="#">В корзину</a>
+							<a class="catalog-compare-button button" href="#">Добавить к сравнению</a>
 						</div>
 						<div class="img-wrapper">
-							<img src="img/product/item-4.jpg" alt="Селфи-палка следуй за мной" width="360" height="380">
+							<img class="" src="img/product/item-4.jpg" alt="Селфи-палка следуй за мной" width="360" height="380">
 						</div>
 						<p class="catalog-item-price-wrap">
 							<a href="#" class="button-link">Селфи-палка следуй за мной</a>
@@ -198,15 +198,14 @@
 						</p>
 					</div>
 				</div>
-				<section class="contols">
-					<button type="button">Назад</button>
+				<section class="pagination">
+					<button class="button-pagination" type="button">Назад</button>
 					<ul class="pagination-list">
 						<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
 						<li class="pagination-item"><a>2</a></li>
 						<li class="pagination-item"><a href="#">3</a></li>
-						<li class="pagination-item"><a href="#">4</a></li>
 					</ul>
-					<button type="button">Вперед</button>
+					<button class="button-pagination" type="button">Вперед</button>
 				</section>
 			</div>
 		</section>
@@ -276,7 +275,7 @@
 			</ul>
 		</div>
 		<p class="footer-copyright">
-			<a class="button" href="https://htmlacademy.ru">
+			<a href="https://htmlacademy.ru">
 				<svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
 					<path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
 				</svg>
