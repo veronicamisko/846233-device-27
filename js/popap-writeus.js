@@ -9,7 +9,7 @@ var isStorageSupport = true;
 var storage = "";
 
 try {
-	storage = localStorage.getItem("login");
+	storage = localStorage.getItem("name");
 } catch (err) {
 	isStorageSupport = false;
 }
@@ -17,7 +17,6 @@ try {
 link.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	popup.classList.add("modal-show");
-	formName.focus();
 	if (storage) {
 		formName.value = storage;
 		formEmail.focus();
@@ -34,7 +33,6 @@ form.addEventListener("submit", function (evt) {
 	evt.preventDefault();
 	if (!formName.value || !formEmail.value) {
 		evt.preventDefault();
-		console.log("Нужно ввести имя и емайл");
 		popup.classList.remove("modal-error");
 		popup.offsetWidth = popup.offsetWidth;
 		popup.classList.add("modal-error");
