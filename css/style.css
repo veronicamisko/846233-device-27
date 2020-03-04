@@ -255,6 +255,7 @@ a{
 .site-navigation-item a:active{
     color: rgba(0, 0, 0, 0.3);
 }
+
 .navigation-list{
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
@@ -375,6 +376,13 @@ a{
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+.header-logout {
+    padding-left: 0;
+    margin-right: 70px;
+    color: rgba(0, 0, 0, 0.3);
+    margin-left: 20px;
+    position: relative;
+}
 .site-navigation-item .site-navigation-link{
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 15px;
@@ -390,6 +398,7 @@ a{
 .site-navigation-item .site-navigation-link:hover{
     opacity: 1;
 }
+
 .site-navigation-section{
     margin: 0;
     padding: 0;
