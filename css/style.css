@@ -3,18 +3,20 @@
     font-weight: 300;
     font-style: normal;
 
-    src: local('Gilroy Light'), local('Gilroy-Light'), url('../fonts/Gilroylight.woff2') format('woff2'), url('../fonts/Gilroylight.woff') format('woff');
+    src: url('../fonts/gilroylight.woff2') format('woff2'),
+         url('../fonts/gilroylight.woff') format('woff');
 }
 @font-face{
     font-family: 'Gilroy';
     font-weight: 800;
     font-style: normal;
 
-    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('../fonts/Gilroyextrabold.woff2') format('woff2'), url('../fonts/Gilroyextrabold.woff') format('woff');
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold.woff') format('woff');
 }
 
 body{
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'OpenSans', Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     font-style: normal;
@@ -23,6 +25,7 @@ body{
 
     margin: 0;
     padding: 0;
+    min-width: 1200px;
 
     letter-spacing: 0.15px;
 
@@ -134,6 +137,7 @@ a{
     border-bottom: 2px solid transparent;
     border-left: none;
     background-color: transparent;
+    outline-style: none;
 }
 .search-button{
     line-height: 30px;
@@ -252,7 +256,7 @@ a{
     color: rgba(0, 0, 0, 0.3);
 }
 .navigation-list{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.33;
@@ -469,7 +473,7 @@ a{
     margin-right: 80px;
 }
 .slider-content h2{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 47px;
     font-weight: 800;
     line-height: 56px;
@@ -497,7 +501,7 @@ a{
     background-color: #fff;
 }
 .slider-content h2::after{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 180px;
     font-weight: 800;
     line-height: 56px;
@@ -586,7 +590,6 @@ a{
     border: 0;
 }
 .parameter{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
     font-size: 13px;
     font-weight: 300;
     line-height: 20px;
@@ -597,12 +600,13 @@ a{
 
     letter-spacing: 0.1px;
 
-    color: #000;
+    color: #464646;
 }
 .parameter:first-child{
     padding-left: 0;
 }
 .value{
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 36px;
     font-weight: 300;
     line-height: 48px;
@@ -616,7 +620,7 @@ a{
     letter-spacing: 0.7px;
     word-wrap: break-word;
 
-    color: #464646;
+    color: #000;
 }
 .value:first-child{
     padding-left: 0;
@@ -676,7 +680,7 @@ a{
     padding-bottom: 90px;
 }
 .services-content-wrapper h2{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 47px;
     font-weight: 800;
     line-height: 48px;
@@ -793,7 +797,7 @@ a{
 
 
 .btn{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.33;
@@ -844,7 +848,7 @@ a{
 .services-button-active:hover,
 .services-button-active:focus,
 .services-button-active:active{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.33;
@@ -871,7 +875,7 @@ a{
     background-color: #000;
 }
 .services-button{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.33;
@@ -978,7 +982,7 @@ a{
 }
 .contacts h2,
 .about h2{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 47px;
     font-weight: 800;
     line-height: 1.02;
@@ -1025,7 +1029,7 @@ a{
 }
 .contacts-button,
 .about-button{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.33;
@@ -1147,7 +1151,7 @@ a{
     margin-top: -69px;
 }
 .container h1{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 47px;
     font-weight: 800;
 
@@ -1266,7 +1270,7 @@ a{
     justify-content: space-between;
 }
 .catalog-item-price-wrap a{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
@@ -1279,7 +1283,7 @@ a{
     color: #000;
 }
 .catalog-item-price{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 16px;
     font-weight: 300;
 
@@ -1288,7 +1292,7 @@ a{
 
 /*Товары*/
 .product-item-link{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
@@ -1368,7 +1372,7 @@ a{
             align-items: center;
 }
 .catalog-sorting h2{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 16px;
     font-weight: 800;
 
@@ -1391,7 +1395,7 @@ a{
     justify-content: space-between;
 }
 .filter-title{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 16px;
     font-weight: 800;
     line-height: 24px;
@@ -1532,6 +1536,7 @@ a{
     justify-content: space-between;
 }
 .pagination-item a{
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 16px;
     font-weight: 800;
     line-height: 24px;
@@ -1556,7 +1561,7 @@ a{
     color: #000;
 }
 .button-pagination{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 16px;
     font-weight: 800;
     line-height: 24px;
@@ -1602,7 +1607,7 @@ fieldset.catalog-filter-range{
     padding: 0;
 }
 .catalog-filter-range legend{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
@@ -1720,7 +1725,7 @@ fieldset.catalog-filter-color{
     padding: 0;
 }
 .catalog-filter-color legend{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
@@ -1808,7 +1813,7 @@ fieldset.catalog-filter-bluethooth-group{
     padding: 0;
 }
 .catalog-filter-bluethooth-group legend{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
@@ -1851,9 +1856,7 @@ fieldset.catalog-filter-bluethooth-group{
 
     clip: rect(0 0 0 0);
 
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
 }
 .radio-box{
     position: absolute;
@@ -2079,7 +2082,7 @@ fieldset.catalog-filter-bluethooth-group{
     opacity: 0.3;
 }
 .appointment{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
@@ -2208,7 +2211,7 @@ fieldset.catalog-filter-bluethooth-group{
 /**************************/
 
 .button{
-    font-family: Gilroy, Tahoma, Geneva, sans-serif;
+    font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.33;
