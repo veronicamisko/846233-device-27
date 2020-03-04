@@ -227,43 +227,41 @@
 
 		<!-- Преимущества -->
 		<section class="services">
-			<input type="radio" class="visually-hidden" name="service" id="tab1" value="Доставка" checked>
-			<input type="radio" class="visually-hidden" name="service" id="tab2" value="Гарантия">
-			<input type="radio" class="visually-hidden" name="service" id="tab3" value="Кредит">
-			<div class="wrapper-content tab-wrapper">
-				<ul class="tab-controls">
-					<li class="info-menu-item">
-						<label for="tab1" class="services-button-active btn">
-							Доставка
-						</label>
-					</li>
-					<li class="info-menu-item">
-						<label for="tab2" class="services-button">
-							Гарантия
-						</label>
-					</li>
-					<li class="info-menu-item">
-						<label for="tab3" class="services-button">
-							Кредит
-						</label>
-					</li>
-				</ul>
-				<ul class="services-content">
-					<li class="services-content-wrapper tab" id="tab-1">
-						<h2 class="delivery">Доставка</h2>
-						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-					</li>
-					<li class="services-content-wrapper tab" id="tab-2">
-						<h2 class="warranty">Гарантия</h2>
-						<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-					</li>
-					<li class="services-content-wrapper tab" id="tab-3">
-						<h2 class="credit">Кредит</h2>
-						<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-					</li>
-				</ul>
-			</div>
-		</section>
+        <div class="container">
+          <input type="radio" class="services-radio-1" id="services-radio-1" name="services-toggle" checked>
+          <input type="radio" class="services-radio-2" id="services-radio-2" name="services-toggle">
+          <input type="radio" class="services-radio-3" id="services-radio-3" name="services-toggle">
+          <div class="services-controls">
+            <label class="services-button-1" for="services-radio-1">Доставка</label>
+            <label class="services-button-2" for="services-radio-2">Гарантия</label>
+            <label class="services-button-3" for="services-radio-3">Кредит</label>
+          </div>
+
+          <ul class="services-slider">
+            <li class="services-slide-1">
+              <h2 class="services-title delivery">Доставка</h2>
+              <p class="services-description">Мы с удовольствием доставим ваш товар
+                прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
+                поднимая его на ваш этаж.</p>
+            </li>
+
+            <li class="services-slide-2">
+              <h2 class="services-title warranty">Гарантия</h2>
+              <p class="services-description">Если из-за возгорания купленного у нас
+                товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
+                Товар, не дом, конечно же.</p>
+            </li>
+
+            <li class="services-slide-3">
+              <h2 class="services-title credit">Кредит</h2>
+              <p class="services-description">Залезть в долговую яму стало проще!
+                Кредитные консультанты подберут для вас наиболее выгодные
+                условия кредита. Выгодные для нашего банка, разумеется.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 		<!-- // Преимущества -->
 
 		<!-- Производители -->
