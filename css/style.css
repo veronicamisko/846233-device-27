@@ -1025,13 +1025,17 @@ a{
     position: relative;
 }
 .partners-item::before{
-    position: absolute;
-    left: -33px;
-
-    content: '◦';
-
-    color: rgb(229, 229, 229);
+    content: '';
+    margin-right: 25px;
+    margin-left: -35px;
+    width: 5px;
+    height: 5px;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+   display: inline-block;
+   vertical-align: baseline;
 }
+
 
 /**************************/
 /*********CATALOG**********/
@@ -1790,10 +1794,16 @@ fieldset.catalog-filter-bluethooth-group{
 /**************************/
 /*Футер*/
 .main-footer{
+    padding: 0 20px;
+    margin: 0 auto;
     width: 100%;
     padding-top: 65px;
 
     background-color: #464646;
+    display: flex;
+    justify-content: space-between;
+    height: 323px;
+    margin-top: 64px;
 }
 .main-footer p,
 .main-footer a{
@@ -2025,6 +2035,8 @@ fieldset.catalog-filter-bluethooth-group{
 }
 .writeus textarea{
     width: 760px;
+    height: 156px;
+    resize: none;
 }
 .writeus input[type='text']:hover,
 .writeus input[type='email']:hover,
@@ -2146,7 +2158,7 @@ fieldset.catalog-filter-bluethooth-group{
 .button::before{
     position: absolute;
     z-index: -1;
-    top: 6px;
+    top: 8px;
     left: 0;
 
     width: 219px;
