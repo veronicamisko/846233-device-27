@@ -376,12 +376,27 @@ a{
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-.header-logout {
-    padding-left: 0;
-    margin-right: 70px;
-    color: rgba(0, 0, 0, 0.3);
-    margin-left: 20px;
+.user-navigation-link::after {
+    padding-left: 10px;
+    margin-right: 60px;
     position: relative;
+    top: 1px;
+    right: 5px;
+
+    width: 14px;
+    height: 13px;
+
+    content: 'Выйти';
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.user-navigation-link:hover::after,
+.user-navigation-link:focus::after{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation-link:active::after{
+    color: #000;
 }
 .site-navigation-item .site-navigation-link{
     font-family: 'Open Sans', Arial, sans-serif;
