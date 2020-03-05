@@ -355,14 +355,16 @@ a{
 .user-navigation{
     flex-grow: 1;
 }
-.user-navigation-link{
+.user-navigation-link,
+.user-navigation-link-catalog{
     line-height: 35px;
 
     position: relative;
 
     padding-left: 25px;
 }
-.user-navigation-link::before{
+.user-navigation-link::before,
+.user-navigation-link-catalog::before{
     position: absolute;
     top: 2px;
     left: 1px;
@@ -376,7 +378,8 @@ a{
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-.user-navigation-link::after {
+
+.user-navigation-link-catalog::after {
     padding-left: 10px;
     margin-right: 60px;
     position: relative;
@@ -390,12 +393,12 @@ a{
     color: rgba(0, 0, 0, 0.3);
 }
 
-.user-navigation-link:hover::after,
-.user-navigation-link:focus::after{
+.user-navigation-link-catalog:hover::after,
+.user-navigation-link-catalog:focus::after{
     color: rgba(0, 0, 0, 0.6);
 }
 
-.user-navigation-link:active::after{
+.user-navigation-link-catalog:active::after{
     color: #000;
 }
 .site-navigation-item .site-navigation-link{
@@ -1967,7 +1970,28 @@ fieldset.catalog-filter-bluethooth-group{
     opacity: 0.3;
 }
 
+.user-navigation-link-footer-catalog::after{
+    padding-left: 10px;
+    margin-right: 60px;
+    position: relative;
+    top: 1px;
+    right: 5px;
 
+    width: 14px;
+    height: 13px;
+
+    content: 'Выйти';
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.user-navigation-link-footer-catalog:hover::after,
+.user-navigation-link-footer-catalog:focus::after{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.user-navigation-link-footer-catalog:active::after{
+    color: #fff;
+}
 
 /**************************/
 /*********МОДАЛКИ**********/
