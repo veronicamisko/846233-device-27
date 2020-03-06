@@ -43,17 +43,6 @@ form.addEventListener("submit", function (evt) {
   }
 });
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (popup.classList.contains("modal-show")) {
-      popup.classList.remove("modal-show");
-      popup.classList.remove("modal-error");
-    }
-  }
-});
-
-
   var mapLink = document.querySelector(".contacts-button-map");
 
   var mapPopup = document.querySelector(".modal-map");

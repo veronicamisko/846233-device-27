@@ -16,8 +16,8 @@
 }
 
 body{
-    font-family: 'OpenSans', Arial, sans-serif;
-    font-size: 15px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
@@ -379,7 +379,7 @@ a{
     background-position: 0 0;
 }
 
-.user-navigation-link-catalog::after {
+.user-navigation-link-catalog::after{
     padding-left: 10px;
     margin-right: 60px;
     position: relative;
@@ -674,140 +674,140 @@ a{
 }
 
 /*Преимущества*/
-.services {
-  width: 100%;
-  margin: 0 auto;
-  background-image: linear-gradient(#ffffff 100px, #e5e5e5 100px);
+.services{
+    width: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(#ffffff 100px, #e5e5e5 100px);
 }
 
-.services .container {
-  width: 1160px;
-  padding: 0 40px;
-  margin: 0 auto;
-  min-height: 386px;
-  display: flex;
-  flex-direction: row;
+.services .container{
+    width: 1160px;
+    padding: 0 40px;
+    margin: 63px auto;
+    min-height: 386px;
+    display: flex;
+    flex-direction: row;
 
-  position: relative;
+    position: relative;
 }
 
 .services-radio-1,
 .services-radio-2,
-.services-radio-3 {
-  display: none;
+.services-radio-3{
+    display: none;
 }
 
-.services-controls {
-  display: flex;
-  flex-direction: column;
-  margin-top: 56px;
-  position: relative;
+.services-controls{
+    display: flex;
+    flex-direction: column;
+    margin-top: 56px;
+    position: relative;
 }
 
-.services-controls::before {
-  content: '';
-  width: 7px;
-  height: 319px;
+.services-controls::before{
+    content: '';
+    width: 7px;
+    height: 319px;
 
-  background-color: #000000;
+    background-color: #000000;
 
-  position: absolute;
-  top: -56px;
-  left: 279px;
+    position: absolute;
+    top: -56px;
+    left: 279px;
 }
 
 .services-button-1,
 .services-button-2,
-.services-button-3 {
-  width: 160px;
-  margin-top: 22px;
-  padding-left: 6px;
+.services-button-3{
+    width: 160px;
+    margin-top: 22px;
+    padding-left: 6px;
 
-  font-family: 'Gilroy', Arial, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 40px;
-  letter-spacing: 0.21em;
-  text-transform: uppercase;
-  color: #000;
-  text-align: center;
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 0.21em;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  background-image: linear-gradient(transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+    background-image: linear-gradient(transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 }
 
-.services-button {
-  margin-top: 25px;
-  margin-left: -2px;
-  margin-bottom: 2px;
+.services-button{
+    margin-top: 25px;
+    margin-left: -2px;
+    margin-bottom: 2px;
 }
 
 .services-radio-1:checked ~ .services-controls .services-button-1,
 .services-radio-2:checked ~ .services-controls .services-button-2,
-.services-radio-3:checked ~ .services-controls .services-button-3 {
-  padding-right: 116px;
-  background-color: #000;
-  background-image: none;
-  color: #f7e184;
+.services-radio-3:checked ~ .services-controls .services-button-3{
+    padding-right: 116px;
+    background-color: #000;
+    background-image: none;
+    color: #f7e184;
 }
 
 .services-button-1:hover,
 .services-button-2:hover,
-.services-button-3:hover {
-  background-color: #f0c52e;
+.services-button-3:hover{
+    background-color: #f0c52e;
 }
 
 .services-slide-1,
 .services-slide-2,
-.services-slide-3 {
-  display: none;
+.services-slide-3{
+    display: none;
 
-  margin-left: 80px;
-  flex-direction: column;
+    margin-left: 80px;
+    flex-direction: column;
 }
 
-.services-title {
-  font-family: 'Gilroy', Arial, sans-serif;
-  font-size: 47px;
-  line-height: 48px;
-  font-weight: 800;
+.services-title{
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: 800;
 
-  color: #000000;
+    color: #000000;
 
-  margin-top: 55px;
-  margin-bottom: 16px;
-  letter-spacing: 0.02em;
+    margin-top: 55px;
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
 }
 
-.services-description {
-  width: 437px;
+.services-description{
+    width: 437px;
 
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 30px;
-  letter-spacing: 0.015em;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.015em;
 }
 
-.services-icon {
-  position: absolute;
-  right: 65px;
-  top: 83px;
+.services-icon{
+    position: absolute;
+    right: 65px;
+    top: 83px;
 }
-.services-slide-2 .services-icon {
-  top: 60px;
-  right: 46px;
+.services-slide-2 .services-icon{
+    top: 60px;
+    right: 46px;
 }
-.services-slide-3 .services-icon {
-  top: 61px;
-  right: 69px;
+.services-slide-3 .services-icon{
+    top: 61px;
+    right: 69px;
 }
 
 .services-radio-1:checked ~ .services-slider .services-slide-1,
 .services-radio-2:checked ~ .services-slider .services-slide-2,
 .services-radio-3:checked ~ .services-slider .services-slide-3 {
-  display: flex;
+    display: flex;
 }
 
 .delivery{
@@ -816,7 +816,7 @@ a{
 .delivery::after{
     position: absolute;
     top: 11px;
-    right: -230px;
+    right: -253px;
 
     width: 136px;
     height: 164px;
@@ -831,7 +831,7 @@ a{
 .warranty::after{
     position: absolute;
     top: 7px;
-    right: -231px;
+    right: -253px;
 
     width: 136px;
     height: 164px;
@@ -846,7 +846,7 @@ a{
 .warranty::after{
     position: absolute;
     top: 7px;
-    right: -231px;
+    right: -253px;
 
     width: 171px;
     height: 195px;
@@ -1035,7 +1035,8 @@ a{
     padding-top: 15px;
 }
 .partners-list{
-    font-weight: 700;
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-weight: 800;
     line-height: 40px;
 
     margin-bottom: 64px;
@@ -1059,8 +1060,8 @@ a{
     height: 5px;
     border: 2px solid #e5e5e5;
     border-radius: 50%;
-   display: inline-block;
-   vertical-align: baseline;
+    display: inline-block;
+    vertical-align: baseline;
 }
 
 
@@ -1268,7 +1269,7 @@ a{
 .product-wrapper-img img{
     margin: auto auto;
 }
-.product-wrapper-img .img-product-2 {
+.product-wrapper-img .img-product-2{
     margin-left: auto;
     margin-right: auto;
     margin-top: 25%;
@@ -1454,7 +1455,7 @@ a{
 .pagination{
     display: flex;
 
-    width: 760px;
+    width: 759px;
     margin-top: 22px;
     margin-right: 20px;
     margin-bottom: 82px;
@@ -1468,7 +1469,7 @@ a{
 .pagination-list{
     display: flex;
 
-    margin: 0;
+    margin: 5px;
     padding: 0;
 
     list-style: none;
@@ -1483,7 +1484,7 @@ a{
 
     display: block;
 
-    padding: 20px;
+    padding: 15px;
 
     letter-spacing: 3.2px;
     text-transform: uppercase;
@@ -1714,10 +1715,7 @@ fieldset.catalog-filter-color{
     position: absolute;
 
     clip: rect(0 0 0 0);
-
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
 }
 .check-box{
     position: absolute;
@@ -1821,7 +1819,7 @@ fieldset.catalog-filter-bluethooth-group{
 /**************************/
 /*Футер*/
 .main-footer{
-    padding: 0 20px;
+    padding: 0px;
     margin: 0 auto;
     width: 100%;
     padding-top: 65px;
@@ -1830,7 +1828,7 @@ fieldset.catalog-filter-bluethooth-group{
     display: flex;
     justify-content: space-between;
     height: 323px;
-    margin-top: 64px;
+    margin-top: 0px;
 }
 .main-footer p,
 .main-footer a{
@@ -1852,7 +1850,7 @@ fieldset.catalog-filter-bluethooth-group{
     padding-bottom: 21px;
 }
 .footer-row > a > svg{
-    fill: #f0c52e;
+    fill: #ffc600;
 }
 .footer-row > a[href] > svg:hover,
 .footer-row > a[href] > svg:focus{
@@ -1862,7 +1860,7 @@ fieldset.catalog-filter-bluethooth-group{
     opacity: 0.2;
 }
 .footer-copyright a{
-    fill: #f0c52e;
+    fill: #ffc600;
 }
 .footer-copyright a:hover,
 .footer-copyright a:focus{
@@ -1871,6 +1869,9 @@ fieldset.catalog-filter-bluethooth-group{
 .footer-copyright a:active{
     opacity: 0.2;
 }
+.footer-row:last-child{
+    margin: 15px auto;
+  }
 .footer-social{
     display: flex;
 
@@ -1914,6 +1915,14 @@ fieldset.catalog-filter-bluethooth-group{
     margin: 0;
     padding: 0;
     padding-bottom: 49px;
+
+    height: 13px;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 2;
+    text-align: right;
 }
 .footer-contacts a{
     text-decoration: none;
@@ -1928,7 +1937,7 @@ fieldset.catalog-filter-bluethooth-group{
 }
 .footer-contacts:nth-child(1)::before{
     position: absolute;
-    bottom: -35px;
+    bottom: -55px;
 
     width: 80px;
     height: 7px;
@@ -1942,14 +1951,14 @@ fieldset.catalog-filter-bluethooth-group{
     width: 35px;
     height: 35px;
 
-    opacity: 0.5;
+    opacity: 0.3;
 }
 .social-button:hover,
 .social-button:focus{
-    opacity: 0.8;
+    opacity: 0.6;
 }
 .social-button:active{
-    opacity: 0.2;
+    opacity: 0.1;
 }
 .user-navigation-footer{
     margin: 0;
