@@ -379,7 +379,7 @@ a{
     background-position: 0 0;
 }
 
-.user-navigation-link-catalog::after{
+.user-navigation a:last-child{
     padding-left: 10px;
     margin-right: 60px;
     position: relative;
@@ -389,16 +389,15 @@ a{
     width: 14px;
     height: 13px;
 
-    content: 'Выйти';
     color: rgba(0, 0, 0, 0.3);
 }
 
-.user-navigation-link-catalog:hover::after,
-.user-navigation-link-catalog:focus::after{
+.user-navigation a:last-child:hover,
+.user-navigation a:last-child:focus{
     color: rgba(0, 0, 0, 0.6);
 }
 
-.user-navigation-link-catalog:active::after{
+.user-navigation a:last-child:active{
     color: #000;
 }
 .site-navigation-item .site-navigation-link{
@@ -1979,7 +1978,7 @@ fieldset.catalog-filter-bluethooth-group{
     opacity: 0.3;
 }
 
-.user-navigation-link-footer-catalog::after{
+.navigation-link-footer-catalog a:last-child{
     padding-left: 10px;
     margin-right: 60px;
     position: relative;
@@ -1989,16 +1988,15 @@ fieldset.catalog-filter-bluethooth-group{
     width: 14px;
     height: 13px;
 
-    content: 'Выйти';
     color: rgba(255, 255, 255, 0.3);
 }
 
-.user-navigation-link-footer-catalog:hover::after,
-.user-navigation-link-footer-catalog:focus::after{
+.navigation-link-footer-catalog a:last-child:hover,
+.navigation-link-footer-catalog a:last-child:focus{
     color: rgba(255, 255, 255, 0.6);
 }
 
-.user-navigation-link-footer-catalog:active::after{
+.navigation-link-footer-catalog a:last-child:active{
     color: #fff;
 }
 
