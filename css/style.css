@@ -52,7 +52,7 @@ a{
 }
 .header-content{
     box-sizing: border-box;
-    padding-top: 21px;
+    padding-top: 22px;
     background: linear-gradient(to bottom, #fff, #fff 40px, #f7e296 40px);
 }
 /*ÃƒÆ’Ã‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¾ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â³ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¾ÃƒÆ’Ã¢â‚¬ËœÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¸ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¿*/
@@ -121,7 +121,7 @@ a{
 }
 .search{
     width: 100%;
-    padding-left: 37px;
+    padding-left: 38px;
     border-top: none;
     border-right: none;
     border-bottom: 2px solid transparent;
@@ -171,7 +171,7 @@ a{
 }
 .search-wrapper::before{
     position: absolute;
-    top: 9px;
+    top: 8px;
     left: 3px;
     width: 16px;
     height: 16px;
@@ -262,7 +262,7 @@ a{
 }
 .navigation-link__compare::before{
     position: absolute;
-    top: 10px;
+    top: 11px;
     left: 0px;
     width: 14px;
     height: 13px;
@@ -279,7 +279,7 @@ a{
 .navigation-link__cart::before{
     position: absolute;
     top: 9px;
-    left: -2px;
+    left: -1px;
     width: 14px;
     height: 13px;
     content: '';
@@ -356,13 +356,13 @@ a{
 
 .user-navigation a:last-child{
     padding-left: 31px;
-    margin-right: 0px;
+    margin-right: 1px;
     position: relative;
-    top: -2px;
+    top: 0px;
     right: 5px;
     width: 14px;
     height: 13px;
-    color: #fff;
+    color: #000;
 }
 
 .user-navigation a:last-child:hover,
@@ -1796,7 +1796,8 @@ fieldset.catalog-filter-bluethooth-group{
     justify-content: space-between;
 }
 .footer-row:first-child{
-    padding-bottom: 21px;
+    padding-bottom: 22px;
+    /* padding-left: 0px; */
 }
 .footer-row > a > svg{
     fill: #ffc600;
@@ -1852,9 +1853,7 @@ fieldset.catalog-filter-bluethooth-group{
 }
 .footer-navigation{
     display: flex;
-
     min-width: 500px;
-
     justify-content: space-between;
 }
 .footer-contacts{
@@ -1909,7 +1908,9 @@ fieldset.catalog-filter-bluethooth-group{
 .navigation-link-footer{
     margin: 0;
     padding: 0;
-    padding-left: 23px;
+    padding-left: 17px;
+    color: #fff;
+    opacity: 0.7;
 }
 .navigation-link-footer:hover,
 .navigation-link-footer:focus{
@@ -1919,7 +1920,17 @@ fieldset.catalog-filter-bluethooth-group{
 .navigation-link-footer:active{
     opacity: 0.3;
 }
-
+.user-navigation-footer a:first-child{
+    padding-left: 31px;
+    margin-right: 1px;
+    position: relative;
+    top: 0px;
+    right: 5px;
+    width: 14px;
+    height: 13px;
+    color: #fff;
+    opacity: 0.7;
+}
 .navigation-link-footer-catalog a:last-child{
     padding-left: 10px;
     margin-right: 60px;
@@ -1940,6 +1951,9 @@ fieldset.catalog-filter-bluethooth-group{
 
 .navigation-link-footer-catalog a:last-child:active{
     color: #fff;
+}
+.navigation-link-footer svg{
+    margin-right: 10px;
 }
 
 /**************************/
